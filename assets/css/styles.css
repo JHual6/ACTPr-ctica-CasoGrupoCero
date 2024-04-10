@@ -48,7 +48,7 @@
     background-color: var(--color2);
 }
 .galeria_titulo{
-    padding: 60px;
+    padding: 70px;
     font-size: 200%;
 }
 .galeria_parte{
@@ -60,14 +60,13 @@
     width: 400px;
     cursor: pointer;
     transition: .8s;
-    padding-bottom: 40px;
 }
 .imag_galeria:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
     transition: .8s;
-    -webkit-box-shadow: 0px 0px 96px -4px var(--color1);
-    -moz-box-shadow: 0px 0px 96px -4px var(--color1);
-    box-shadow: 0px 0px 96px -4px var(--color1);
+    -webkit-box-shadow: 10px 0px 67px -11px var(--color1);
+    -moz-box-shadow: 10px 0px 67px -11px var(--color1);
+    box-shadow: 10px 0px 67px -11px var(--color1);
 }
 /* Contacto */
 .contacto{
@@ -194,31 +193,42 @@
     .galeria_titulo{
         font-size: 40px;
     }
+    .imag_galeria{
+        width: 7em;
+        height: 7em;
+    }
     /* Contacto, Página principal */
     .contacto{
-        padding: 40px;
+        padding: 20px;
     }
     /* Fondo, Páginas de productos */
     .fondo_producto{
-        height: 300px;
+        height: 12em;
     }
     .producto_titulo{
-        padding: 180px;
+        padding: 3em;
     }
     .producto_titulo_h1{
         font-size: 20px;
     }
     /* Descripción de productos, Página de productos */
+    .desc-producto{
+        padding: 50px;
+    }
     .producto-foto{
-        width: 360px;
-        height: 360px;
+        width: 7em;
+        height: 7em;
     }
     .text-start{
-        font-size: 70%;
+        font-size: 60%;
     }
     /* Fotos de la galería, Página de productos */
     .galeria{
         font-size: 180%;
+    }
+    .imagen-producto-otros{
+        width: 12em;
+        height: 12em;
     }
 }
 /* Pantallas entre pequeñas y grandes, para un encuadre específico */
