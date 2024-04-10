@@ -17,20 +17,39 @@
 </head>
 <body>
     <!-- Menú principal -->
-    <nav class="navbar menu">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark menu">
         <div class="container-fluid">
             <div class="col-4 menuicon">
-                <a class="nav-link d-inline px-5 fw-bold" href="./index.html"><img src="./assets/img/logoblanco.png" width="60" height="70" alt="Logotipo">Grupo Cero</a>
+                <a class="nav-link d-inline fw-bold menu_icon" href="./index.html"><img class="imagen_logo" src="./assets/img/logoblanco.png" width="60" height="70" alt="Logotipo">Grupo Cero</a>
             </div>
-            <a class="nav-link d-inline px-3 menuitembut fw-bold" aria-current="page" href="./index.html">Inicio</a>
-            <a class="nav-link d-inline px-3 menuitembut fw-bold" aria-current="page" href="#">Productos</a>
-            <a class="nav-link d-inline px-3 menuitembut fw-bold" aria-current="page" href="#">Artistas</a>
-            <a class="nav-link d-inline px-3 menuitembut fw-bold" aria-current="page" href="#">Contacto</a>
-            <form class="d-flex d-inline px-3 menuitembut"  role="search">
-                <input class="form-control me-2 buscar_input" type="search" aria-label="Search">
-                <button class="btn btn-outline-light boton_buscar" type="submit">Buscar</button>
-            </form>
-            <a class="nav-link d-inline px-3 menuitembut fw-bold" aria-current="page" href="./Registrar.html"><i class="fa-solid fa-user"></i>Cuenta</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a class="nav-link d-inline px-3 menuitembut fw-bold  menu_items" aria-current="page" href="./index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link d-inline px-3 menuitembut fw-bold  menu_items" aria-current="page" href="#">Productos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link d-inline px-3 menuitembut fw-bold  menu_items" aria-current="page" href="#">Artistas</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link d-inline px-3 menuitembut fw-bold  menu_items" aria-current="page" href="#">Contacto</a>
+                </li>
+                <li class="nav-item">
+                  <form class="d-flex d-inline px-3 menuitembut"  role="search">
+                    <input class="form-control me-2 buscar_input" type="search" aria-label="Search">
+                    <button class="btn btn-outline-light boton_buscar" type="submit">Buscar</button>
+                  </form>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link d-inline px-3 menuitembut fw-bold  menu_items" aria-current="page" href="./Registrar.html"><i class="fa-solid fa-user"></i>Cuenta</a>
+                </li>
+              </ul>
+          </div>
         </div>
       </nav>
     <!-- Titulo y Fondo del Producto n°2 -->
@@ -55,7 +74,7 @@
         </div>
     </aside>
     <!-- Fotos de la galería -->
-    <aside class="galería_comp">
+    <aside class="galería_comp container-fluid">
         <div class="text-center d-block">
             <h1 class="galeria fw-bold">Galería</h1>
         </div>

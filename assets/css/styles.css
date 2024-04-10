@@ -16,13 +16,11 @@
     padding: 6px;
     background-color: var(--color2);
 }
-.menuicon{
+.menu_icon{
     color: var(--color1);
-    margin-left: -40px;
 }
-.menuitems{
-    font-size: 14px;
-    text-align: right;
+.menu_items{
+    color: var(--color1)
 }
 .menuitembut:hover{
     color: var(--color3) ;
@@ -43,13 +41,13 @@
 .imagenes_carrousel{
     height: 650px;
 }
-/* Galería de fotos */
+/* Galería de fotos--------------------------- */
 .galeria{
     background-color: var(--color2);
 }
 .galeria_titulo{
-    padding: 70px;
-    font-size: 200%;
+    padding: 70px 0px 20px 0px;
+    font-size: 50px;
 }
 .galeria_parte{
     text-align: center;
@@ -203,7 +201,7 @@
     }
     /* Fondo, Páginas de productos */
     .fondo_producto{
-        height: 12em;
+        height: 15em;
     }
     .producto_titulo{
         padding: 3em;

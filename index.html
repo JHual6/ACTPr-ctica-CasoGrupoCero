@@ -11,26 +11,44 @@
     <!-- CSS -->
     <link rel="stylesheet" href="./assets/css/styles.css">
     <!-- FontAwesome -->
-    <script src="https://kit.fontawesome.com/98b7a38728.js" 
-    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Grupo Cero</title>
 </head>
 <body>
     <!-- Menú principal con logo -->
-    <nav class="navbar menu">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark menu">
         <div class="container-fluid">
             <div class="col-4 menuicon">
-                <a class="nav-link d-inline px-5 fw-bold menu_icon" href="./index.html"><img class="imagen_logo" src="./assets/img/logoblanco.png" width="60" height="70" alt="Logotipo">Grupo Cero</a>
+              <a class="nav-link d-inline fw-bold menu_icon" href="./index.html"><img class="imagen_logo" src="./assets/img/logoblanco.png" width="60" height="70" alt="Logotipo">Grupo Cero</a>
             </div>
-            <a class="nav-link d-inline px-3 menuitembut fw-bold" aria-current="page" href="./index.html">Inicio</a>
-            <a class="nav-link d-inline px-3 menuitembut fw-bold" aria-current="page" href="#">Productos</a>
-            <a class="nav-link d-inline px-3 menuitembut fw-bold" aria-current="page" href="#">Artistas</a>
-            <a class="nav-link d-inline px-3 menuitembut fw-bold" aria-current="page" href="#">Contacto</a>
-            <form class="d-flex d-inline px-3 menuitembut"  role="search">
-                <input class="form-control me-2 buscar_input" type="search" aria-label="Search">
-                <button class="btn btn-outline-light boton_buscar" type="submit">Buscar</button>
-            </form>
-            <a class="nav-link d-inline px-3 menuitembut fw-bold" aria-current="page" href="./Registrar.html"><i class="fa-solid fa-user"></i>Cuenta</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a class="nav-link d-inline px-2 menuitembut fw-bold  menu_items" aria-current="page" href="./index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link d-inline px-2 menuitembut fw-bold  menu_items" aria-current="page" href="#">Productos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link d-inline px-2 menuitembut fw-bold  menu_items" aria-current="page" href="#">Artistas</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link d-inline px-2 menuitembut fw-bold  menu_items" aria-current="page" href="#">Contacto</a>
+                </li>
+                <li class="nav-item">
+                  <form class="d-flex d-inline px-2 menuitembut"  role="search">
+                    <input class="form-control me-2 buscar_input" type="search" aria-label="Search">
+                    <button class="btn btn-outline-light boton_buscar" type="submit">Buscar</button>
+                  </form>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link d-inline px-2 menuitembut fw-bold  menu_items" aria-current="page" href="./Registrar.html"><i class="fa-solid fa-user"></i>Cuenta</a>
+                </li>
+              </ul>
+          </div>
         </div>
       </nav>
     <!-- Carrusel productos destacados -->
@@ -67,27 +85,30 @@
         </button>
     </div>
     <!-- Galería de fotos -->
-    <div class="galeria">
+    <div class="galeria container-fluid text-center">
       <h1 class="fw-bold text-center galeria_titulo">Galería de arte</h1>
-      <div class="row galeria_parte">
-        <div class="col-sm-12 col-md-12 col-lg-6 py-3">
-          <img class="imag_galeria" src="./assets/img/galeria_pintura1.jpg" alt="Pintura 1 de la Galería">
-        </div>
-        <div class="col-sm-12 col-md-12 col-lg-6 py-3">
-          <img class="imag_galeria" src="./assets/img/galeria_pintura2.jpg" alt="Pintura 2 de la Galería">
-        </div>
-        <div class="col-sm-12 col-md-12 col-lg-6 py-3">
-          <img class="imag_galeria" src="./assets/img/galeria_pintura3.jpg" alt="Pintura 1 de la Galería">
-        </div>
-        <div class="col-sm-12 col-md-12 col-lg-6 py-3">
-          <img class="imag_galeria" src="./assets/img/galeria_pintura4.jpg" alt="Pintura 2 de la Galería">
-        </div>
-        <div class="col-sm-12 col-md-12 col-lg-6 py-3">
-          <img class="imag_galeria" src="./assets/img/galeria_pintura5.jpg" alt="Pintura 1 de la Galería">
-        </div>
-        <div class="col-sm-12 col-md-12 col-lg-6 py-3">
-          <img class="imag_galeria" src="./assets/img/galeria_pintura6.jpg" alt="Pintura 2 de la Galería">
-        </div>
+      <div class="row">
+          <div class="col-sm-12 col-md-4 col-lg-6 py-3">
+            <img class="imag_galeria" src="./assets/img/galeria_pintura1.jpg" alt="Pintura 1 de la Galería">
+          </div>
+          <div class="col-sm-12 col-md-4 col-lg-6 py-3">
+            <img class="imag_galeria" src="./assets/img/galeria_pintura2.jpg" alt="Pintura 2 de la Galería">
+          </div>
+
+          <div class="col-sm-12 col-md-12 col-lg-6 py-3">
+            <img class="imag_galeria" src="./assets/img/galeria_pintura3.jpg" alt="Pintura 1 de la Galería">
+          </div>
+          <div class="col-sm-12 col-md-12 col-lg-6 py-3">
+            <img class="imag_galeria" src="./assets/img/galeria_pintura4.jpg" alt="Pintura 2 de la Galería">
+          </div>
+
+          <div class="col-sm-12 col-md-12 col-lg-6 py-3">
+            <img class="imag_galeria" src="./assets/img/galeria_pintura5.jpg" alt="Pintura 1 de la Galería">
+          </div>
+          <div class="col-sm-12 col-md-12 col-lg-6 py-3">
+            <img class="imag_galeria" src="./assets/img/galeria_pintura6.jpg" alt="Pintura 2 de la Galería">
+          </div>
+
       </div>
     </div>
     <!-- Contacto -->
@@ -125,11 +146,7 @@
       </div>
   </footer>
   <!-- Bootstrap -->
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" 
-  integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" 
-  crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" 
-  integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" 
-  crossorigin="anonymous"></script>
-</body>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+  </body>
 </html>
