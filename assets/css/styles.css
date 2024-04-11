@@ -49,10 +49,6 @@
     padding: 70px 0px 20px 0px;
     font-size: 50px;
 }
-.galeria_parte{
-    text-align: center;
-    padding: 40px;
-}
 .imag_galeria{
     height: 400px;
     width: 400px;
@@ -114,8 +110,10 @@
     background-image: fixed;
     background-image: center;
     background-size: cover;
-}
+    height: 38em;
+} 
 .producto_titulo{
+    background-color: rgba(0, 0, 0, 0.5);
     padding: 250px;
     text-align: center;
 }
@@ -124,16 +122,14 @@
     font-size: 600%;
 }
 /* Descripción del producto */
-.desc-producto{
+.desc_producto{
     color: var(--color1);
     background-color: var(--color2);
     padding: 100px;
-    font-size: 150%;
+    font-size: 110%;
 }
-.producto-foto{
-    height: 520px;
-    width: 520px;
-    border-radius: 5%;
+.foto_producto{
+    border-radius: 10%;
 }
 .producto-desc-nombre{
     text-align: center;
@@ -178,7 +174,7 @@
 
 
 /* Responsive dispositivos pequeños - medios */
-@media (max-width: 720px) {
+@media (max-width: 576px) {
     /* Menú */
     .menuicon{
         margin: 0px;
@@ -204,20 +200,17 @@
         height: 15em;
     }
     .producto_titulo{
-        padding: 3em;
+        padding: 7em;
     }
     .producto_titulo_h1{
-        font-size: 20px;
+        text-align: center;
+        font-size: 1em;
     }
     /* Descripción de productos, Página de productos */
-    .desc-producto{
+    .desc_producto{
         padding: 50px;
     }
-    .producto-foto{
-        width: 7em;
-        height: 7em;
-    }
-    .text-start{
+    .desc_producto_texto{
         font-size: 60%;
     }
     /* Fotos de la galería, Página de productos */
@@ -230,7 +223,11 @@
     }
 }
 /* Pantallas entre pequeñas y grandes, para un encuadre específico */
-@media (min-width: 720px) and (max-width:1300px){
+@media (min-width: 576px) and (max-width:1300px){
+    /* Contacto, Página principal */
+    .contacto{
+        padding: 20px;
+    }
     /* Fondo, Páginas de productos */
     .fondo_producto{
         height: 600px;
@@ -239,11 +236,19 @@
         padding: 280px;
     }
     .producto_titulo_h1{
-        font-size: 40px;
+        text-align: center;
+        font-size: 1.6em;
     }
     /* Descripción de productos, Páginas de productos */
-    .text-start{
-        font-size: 90%;
+    .desc_producto{
+        display: flex;
+        font-size: 70%;
+    }
+    .foto_producto{
+        height: 40em;
+    }
+    .desc_producto_texto{
+        padding-left: 6em;
     }
     /* Galería de fotos, Páginas de productos */
     .imagen-producto-otros{
@@ -254,7 +259,7 @@
 /* Pantallas Grandes, display flex para encuadrado */
 @media (min-width:1300px) {
     /* Fondo, Páginas de productos */
-    .desc-producto{
+    .desc_producto{
         display: flex;
     }
 }
